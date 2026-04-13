@@ -134,6 +134,7 @@ h1 {
     stroke: #39ff14; stroke-width: 8;
     stroke-linecap: round;
     filter: drop-shadow(0 0 10px #39ff14);
+    transform: translateX(10px);
 }
 
 #reset-btn {
