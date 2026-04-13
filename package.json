@@ -1,0 +1,17 @@
+{
+  "name": "ultimate_ttt",
+  "version": "1.0.0",
+  "description": "Ultimate Tic-Tac-Toe Multiplayer",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "dependencies": {
+    "express": "^4.18.2",
+    "socket.io": "^4.8.3"
+  }
+}

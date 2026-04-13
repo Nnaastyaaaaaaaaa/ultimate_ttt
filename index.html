@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>ULTIMATE TIC-TAC-TOE</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <button id="info-btn">i</button>
+    
+    <h1>ULTIMATE TIC-TAC-TOE</h1>
+    <div class="info-bar">
+        <div id="role-display">ТЫ ИГРАЕШЬ ЗА: <span id="my-symbol">-</span></div>
+        <div id="status">ХОД ИГРОКА: X</div>
+    </div>
+    
+    <div id="game-container">
+        <div id="game-board"></div>
+        <svg id="win-lines-svg"></svg>
+    </div>
+
+    <button id="reset-btn" style="display: none;">НОВАЯ ИГРА</button>
+
+    <div id="rules-modal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h2>ПРАВИЛА</h2>
+            <p>1. Твой ход в маленьком поле определяет, в каком БОЛЬШОМ поле должен ходить противник.</p>
+            <p>2. Если ты составляешь линию в маленьком поле, ты выигрываешь его.</p>
+            <p>3. Цель: выиграть 3 маленьких поля в ряд.</p>
+            <p>4. Если тебя посылают в уже выигранное поле, ты можешь ходить ВЕЗДЕ.</p>
+        </div>
+    </div>
+
+    <script src="/socket.io/socket.io.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
